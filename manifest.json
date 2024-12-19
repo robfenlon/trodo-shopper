@@ -1,0 +1,16 @@
+{
+    "description": "Adds a clickable Trodo shopping link to part numbers on toyodiy",
+    "manifest_version": 2,
+    "name": "Trodo Shopper",
+    "version": "1.0",
+    "homepage_url": "https://github.com/robfenlon/trodo-shopper",
+    "icons": {
+      "48": "icons/icon-48.png"
+    },  
+    "content_scripts": [
+      {
+        "matches": ["*://*.toyodiy.com/*"],
+        "js": ["trodo-shopper.js"]
+      }
+    ]  
+  }
